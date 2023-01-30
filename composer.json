@@ -1,0 +1,18 @@
+{
+    "name": "Kawschool/tienda_online",
+    "description": "creacion de una tienda online",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "",
+            "email": "tienda@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kawschool\\": "src/"
+        }
+    }
+}
