@@ -90,6 +90,7 @@ class Articulos
             return false;
         }
     }
+    //indicando la funcion mostrar por Id
     public function mostrarPorId($id)
     {
         $sql = "SELECT * FROM `peliculas` WHERE `id`=:id ";
