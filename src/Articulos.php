@@ -43,6 +43,7 @@ class Articulos
         $sql = "UPDATE `peliculas` SET `titulo`=:titulo,`descripcion`=:descripcion,`foto`=:foto,`precio`=:precio,`categoria_id`=:categoria_id,`fecha`=:fecha
         WHERE `id`= :id";
 
+//implemento el metodo Query para ejecutar la consulta
         $resultado = $this->cn->query($sql);
 
         $_array = [
