@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!is_numeric($_POST['categoria_id']))
             exit('Seleccionar una Categoria válida');
 
-
+//Array de datos para Actualizar los datos de la pelicula
         $_params = array(
             'titulo' => $_POST['titulo'],
             'descripcion' => $_POST['descripcion'],
