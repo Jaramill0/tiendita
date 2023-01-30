@@ -37,6 +37,7 @@ class Articulos
 
         return false;
     }
+    //Mejoras en la funcion Actualizar para el registro de la pelicula y guardar cambios
     public function actualizar($_params)
     {
         $sql = "UPDATE `peliculas` SET `titulo`=:titulo,`descripcion`=:descripcion,`foto`=:foto,`precio`=:precio,`categoria_id`=:categoria_id,`fecha`=:fecha
