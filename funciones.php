@@ -18,7 +18,7 @@ function actualizarPelicula($id, $cantidad = FALSE)
     else
         $_SESSION['carrito'][$id]["cantidad"] += 1;
 }
-
+//funcion que calcula el total del carrito con los productos
 function calcularTotal()
 {
     $total = 0;
