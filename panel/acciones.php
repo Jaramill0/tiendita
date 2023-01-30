@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 }
 
 
-
+//funcion para subir fotos de la portada de la pelicula 
 function subirFoto()
 {
     $carpeta = __DIR__ . '/../upload/';
