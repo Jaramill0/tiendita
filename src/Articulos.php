@@ -16,7 +16,7 @@ class Articulos
             \PDO::MYSQL_ATTR_INIT_COMMAND => ' SET NAMES utf8'
         ));
     }
-
+//funcion para registrar la pelicula mediante una consulta SQL
     public function registrar($_params)
     {
         $sql = "INSERT INTO `peliculas`(`titulo`, `descripcion`, `foto`, `precio`, `categoria_id`, `fecha`) 
