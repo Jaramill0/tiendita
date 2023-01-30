@@ -35,7 +35,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
 <!DOCTYPE html>
 <html lang="es">
-
+<!-- Cuerpo del carrito de compras -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
