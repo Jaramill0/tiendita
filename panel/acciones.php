@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!is_numeric($_POST['categoria_id']))
             exit('Seleccionar una Categoria válida');
 
-//array de datos para los campos de texto al llenar los datos de cada campo de la tabla registrar_pelicula
+        //array de datos para los campos de texto al llenar los datos de cada campo de la tabla registrar_pelicula
         $_params = array(
             'titulo' => $_POST['titulo'],
             'descripcion' => $_POST['descripcion'],
@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!is_numeric($_POST['categoria_id']))
             exit('Seleccionar una Categoria válida');
 
-//Array de datos para Actualizar los datos de la pelicula
+        //Array de datos para Actualizar los datos de la pelicula
         $_params = array(
             'titulo' => $_POST['titulo'],
             'descripcion' => $_POST['descripcion'],
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             print 'Error al Actualizar la Pelicula';
     }
 }
-
+//metodo get para eliminar la pelicula desde el parametro ID
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $id = $_GET['id'];
