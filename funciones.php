@@ -29,7 +29,7 @@ function calcularTotal()
     }
     return $total;
 }
-
+//funcion que arroja la cantidad  de peliculas
 function cantidadPeliculas()
 {
     $cantidad = 0;
