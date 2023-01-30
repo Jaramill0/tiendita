@@ -15,7 +15,7 @@ class Categorias
             \PDO::MYSQL_ATTR_INIT_COMMAND => ' SET NAMES utf8'
         ));
     }
-
+//se aplica la funcion para mostrar la categoria de las peliculas que pertencen 
     public function mostrar()
     {
         $sql = "SELECT * FROM categorias ";
