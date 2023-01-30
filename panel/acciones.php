@@ -1,6 +1,6 @@
 <?php
 require '../vendor/autoload.php';
-
+//llamando a la clase y namespace de articulos
 $producto = new Kawschool\Articulos;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
