@@ -1,7 +1,7 @@
 <?php
 
 namespace Kawschool;
-
+//clase categoria para identificar la pelicula en la cual pertenece 
 class Categorias
 {
     private $config;
