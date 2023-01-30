@@ -1,5 +1,5 @@
 <?php
-
+//archivo de funciones para agregar la pelicula 
 function agregarPelicula($resultado, $id, $cantidad = 1)
 {
     $_SESSION['carrito'][$id] = array(
@@ -10,7 +10,7 @@ function agregarPelicula($resultado, $id, $cantidad = 1)
         'cantidad' => $cantidad
     );
 }
-
+//actualizar la pelicula de la tabla indicando su cantidad
 function actualizarPelicula($id, $cantidad = FALSE)
 {
     if ($cantidad)
