@@ -60,6 +60,7 @@ class Articulos
 
         return false;
     }
+    //funcion para eliminar el registro que el usuario ejecute en articulos
     public function  eliminar($id)
     {
         $sql = "DELETE FROM `peliculas`  WHERE `id`=:id";
