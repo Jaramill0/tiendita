@@ -8,7 +8,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $producto = new Kawschool\Articulos;
     $resultado = $producto->mostrarPorId($id);
 
-
+    //comprobando el resultado del producto en la busqueda
     if (!$resultado)
         header('Location: index.php');
 
@@ -22,12 +22,12 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
             actualizarPelicula($id);
         } else {
-            //SI EL CARRITO NO EXISTE EN EL CARRITO
+            //SI EL CARRITO NO EXISTE EN EL CARRITo
             agregarPelicula($resultado, $id);
         }
     } else {
 
-        //SI EL CARRITO NO EXISTE
+        //SI EL CARRITO no existe
         agregarPelicula($resultado, $id);
     }
 }
