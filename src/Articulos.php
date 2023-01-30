@@ -75,6 +75,7 @@ class Articulos
 
         return false;
     }
+    //funcion para mostrar los registros de las peliculas agregadas en la tabla
     public function mostrar()
     {
          $sql = "SELECT peliculas.id, titulo, descripcion,foto,nombre,precio,fecha,estado FROM peliculas
