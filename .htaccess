@@ -1,3 +1,4 @@
+<!--Proteccion de datos o posible filtracion de archivos de la app-->
 <FilesMatch "(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$">
     Order allow,deny
     Deny from all
