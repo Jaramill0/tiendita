@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!is_numeric($_POST['categoria_id']))
             exit('Seleccionar una Categoria válida');
 
-
+//array de datos para los campos de texto al llenar los datos de cada campo de la tabla registrar_pelicula
         $_params = array(
             'titulo' => $_POST['titulo'],
             'descripcion' => $_POST['descripcion'],
