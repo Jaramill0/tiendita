@@ -4,6 +4,7 @@ namespace Kawschool;
 
 class Articulos
 {
+    //Conexion a la BD Mejorada con un Constructor mas simple 
     private $config;
     protected $cn = null;
 
