@@ -21,7 +21,7 @@ require 'funciones.php';
 </head>
 
 <body>
-
+<!-- Pagina para dar el agradecimiento de la compra -->
   <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
