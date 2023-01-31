@@ -75,7 +75,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <!--/.nav-collapse -->
         </div>
     </nav>
-
+<!-- tabla de informacion del producto elegido por el usuario -->
     <div class="container" id="main">
         <table class="table table-bordered table-hover">
             <thead>
