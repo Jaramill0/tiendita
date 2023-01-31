@@ -25,11 +25,12 @@
 	max-width: 300px;
 	margin: 0 auto;
 }
-
+/* estilo del pie de pagina tamaño adecuado */
 .footer{
 	margin-top: 100px;
   
 }
+/* Letra mejorada del titulo de la pelicula */
 .titulo-pelicula{
 	font-size: 15px;
 	margin: 0;
