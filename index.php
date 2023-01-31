@@ -1,6 +1,6 @@
 <?php
 session_start();
-  require 'funciones.php';
+require 'funciones.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -44,7 +44,7 @@ session_start();
       <!--/.nav-collapse -->
     </div>
   </nav>
-
+<!-- cuerpo del index principal de los productos y articulos de compra -->
   <div class="container" id="main">
     <?php
     require 'vendor/autoload.php';
@@ -54,7 +54,6 @@ session_start();
     if ($cantidad > 0) {
       for ($x = 0; $x < $cantidad; $x++) {
         $item = $info_producto[$x];
-
     ?>
         <div class="col-md-3">
           <div class="panel panel-default">
@@ -85,8 +84,6 @@ session_start();
     <?php } ?>
 
   </div> <!-- /container -->
-
-
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
