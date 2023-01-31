@@ -89,6 +89,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 </tr>
             </thead>
             <tbody>
+                <!-- actualizar carrito dentro del formulario -->
                 <?php
                 if (isset($_SESSION['carrito']) && !empty($_SESSION['carrito'])) {
                     $c = 0;
