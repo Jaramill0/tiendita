@@ -33,12 +33,13 @@ class Pedido
 
         return false;
     }
+    //registrar detalle de la compra, insertando la consulta para mostrar el detalle de la compra
     public function registrarDetalle($_params)
     {
         $sql = "INSERT INTO `detalle_pedidos`( `pedidos_id`, `pelicula_id`, `precio`, `cantidad`)
          VALUES (:pedidos_id,:pelicula_id,:precio,:cantidad)";
 
-        $resultado = $this->cn->prepare($sql);
+        $resultado = $this->cn->query($sql);
 
         $_params = array(
             ':pedidos_id' => $_params['pedidos_id'],
