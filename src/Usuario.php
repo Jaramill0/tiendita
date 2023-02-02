@@ -16,7 +16,7 @@ class Usuario
             \PDO::MYSQL_ATTR_INIT_COMMAND => ' SET NAMES utf8'
         ));
     }
-
+//funcion de login para la autenticacion del usuario en el carrito de compras
     public function login($nombre, $clave)
     {
         $sql = "SELECT * FROM `usuarios` WHERE nombre_usuario = :nombre AND clave = :clave ";
