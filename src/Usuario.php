@@ -4,9 +4,10 @@ namespace Kawschool;
 
 class Usuario
 {
+    
     private $config;
     protected $cn = null;
-
+    //constructor de conexion a la BD indicando la ruta del archivo config
     public function __construct()
     {
         $this->config = parse_ini_file(__DIR__ . '/../config.ini');
