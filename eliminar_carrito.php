@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+// archivo para dar de baja los productos del carrito si desea el cliente modificar su compra
 if (!isset($_GET['id']) or !is_numeric($_GET['id']))
     header('Location: carrito.php');
 $id = $_GET['id'];
