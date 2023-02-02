@@ -52,11 +52,11 @@ class Pedido
 
         return false;
     }
-
+//funcion que muestra los datos del cliente y el producto
     public function mostrar()
     {
         $sql = "SELECT p.id, nombre, apellidos, email, total, fecha FROM pedidos p INNER JOIN clientes c ON p.cliente_id = c.id ORDER BY p.id DESC";
-        $resultado = $this->cn->prepare($sql);
+        $resultado = $this->cn->query($sql);
         if ($resultado->execute())
             return $resultado->fetchAll();
 
