@@ -15,12 +15,13 @@ class Pedido
             \PDO::MYSQL_ATTR_INIT_COMMAND => ' SET NAMES utf8'
         ));
     }
-
+//funcion registrar pedido del producto 
     public function registrar($_params)
     {
         $sql = " INSERT INTO `pedidos`( `cliente_id`, `total`, `fecha`) VALUES (:cliente_id,:total,:fecha)";
 
-        $resultado = $this->cn->prepare($sql);
+        //cambio de metodo prepare por query
+        $resultado = $this->cn->query($sql);
 
         $_array = [
             ':cliente_id' => $_params['cliente_id'],
