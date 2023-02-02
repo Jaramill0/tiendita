@@ -63,7 +63,7 @@ class Pedido
 
         return false;
     }
-
+//funcion para mostrar por Id del cliente y pedidos
     public function mostrarPorid($id)
     {
         $sql = "SELECT p.id, nombre, apellidos, email, total, fecha FROM pedidos p INNER JOIN clientes c ON p.cliente_id = c.id WHERE p.id = :id";
