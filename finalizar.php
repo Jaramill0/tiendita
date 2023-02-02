@@ -21,7 +21,7 @@ require 'funciones.php';
 </head>
 
 <body>
-
+<!-- finalizando la compra del producto -->
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
